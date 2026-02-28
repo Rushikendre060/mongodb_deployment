@@ -19,10 +19,10 @@ metadata:
   namespace: mongodb
 spec:
   serviceName: "mongodb"
-  replicas: 1
+  replicas: 3  # Number of MongoDB instances in the cluster
   selector:
     matchLabels:
-      app: mongodb
+      app: mongodb  
 
   template:
     metadata:
